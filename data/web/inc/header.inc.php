@@ -70,6 +70,7 @@ if (isset($UI_TEXTS["ui_footer"])) {
 
 $globalVariables = [
   'mailcow_hostname' => getenv('MAILCOW_HOSTNAME'),
+  'single_user_mode' => true,
   'mailcow_locale' => @$_SESSION['mailcow_locale'],
   'mailcow_cc_role' => @$_SESSION['mailcow_cc_role'],
   'mailcow_cc_username' => @$_SESSION['mailcow_cc_username'],

@@ -149,6 +149,9 @@
   <div class="alert alert-{{ ui_texts.ui_announcement_type }}">{{ ui_texts.ui_announcement_text }}</div>
 </div>
 {% endif %}
+{% if single_user_mode %}
+<div class="container mt-3"><div class="alert alert-info mb-0"><strong>Single-user mode</strong> · Configurazione gestita per un dominio e una mailbox. La UI avanzata resta disponibile per recovery.</div></div>
+{% endif %}
 
 <div class="container flex-grow-1 my-4">
 {% block content %}{% endblock %}
